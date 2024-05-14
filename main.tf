@@ -5,3 +5,9 @@ module "gke_cluster" {
   GKE_NUM_NODES  = 2
 }
 
+terraform {
+  backend "gcs" {
+    bucket = "your-bucket-name"
+    prefix = "terraform/state"
+  }
+}
