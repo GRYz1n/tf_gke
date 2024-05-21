@@ -1,5 +1,6 @@
 variable "GOOGLE_PROJECT" {
   type        = string
+  default     = ""
   description = "GCP project to use"
 }
 
@@ -9,4 +10,4 @@ variable "GOOGLE_REGION" {
   description = "GCP region to use"
 }
 
-GKE_NUM_NODES
+# GKE_NUM_NODES
